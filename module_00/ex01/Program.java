@@ -4,6 +4,7 @@ public class Program {
 	private static final int EXIT_STATUS = -1;
 
 	private static final String EXIT_MESSAGE = "IllegalArgument";
+
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
