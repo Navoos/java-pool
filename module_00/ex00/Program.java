@@ -1,5 +1,6 @@
 public class Program {
 	private static final String NUMBER = "479598";
+
 	public static void main(String[] args) {
 		int result = 0;
 
