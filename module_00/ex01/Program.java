@@ -5,17 +5,16 @@ public class Program {
 
 	private static final String EXIT_MESSAGE = "IllegalArgument";
 
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
+	private static final String TRUE = "true";
 
-		int number = scanner.nextInt();
+	private static final String FALSE = "false";
+
+	public static boolean isPrime(int number) {
 
 		if (number <= 1) {
 			System.err.println(EXIT_MESSAGE);
 			System.exit(EXIT_STATUS);
 		}
-
-		int step = 0;
 
 		boolean isPrime = true;
 
@@ -24,10 +23,39 @@ public class Program {
 				isPrime = false;
 				break;
 			}
-			step++;
 		}
 
-		String message = (isPrime ? "true" : "false") + " " + (step + 1);
+		return isPrime;
+	}
+
+	public static int calculateSteps(int number) {
+		int steps = 1;
+
+		for (int i = 2; i <= Math.sqrt(number); i++) {
+			if (number % i == 0) {
+				break;
+			}
+			steps++;
+		}
+
+		return steps;
+	}
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		int number = scanner.nextInt();
+
+
+		String message = "";
+
+		if (isPrime(number)) {
+			message += TRUE;
+		} else {
+			message += FALSE;
+		}
+
+		message += " " + calculateSteps(number);
 
 		System.out.println(message);
 
