@@ -10,7 +10,6 @@ public class Program {
 	private static final String FALSE = "false";
 
 	public static boolean isPrime(int number) {
-
 		if (number <= 1) {
 			System.err.println(EXIT_MESSAGE);
 			System.exit(EXIT_STATUS);
@@ -45,7 +44,6 @@ public class Program {
 		Scanner scanner = new Scanner(System.in);
 
 		int number = scanner.nextInt();
-
 
 		String message = "";
 

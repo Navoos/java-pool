@@ -14,7 +14,7 @@ public class Program {
 
 	public static void main(String[] args) {
 		int result = getSumOfDigits(NUMBER);
-		
+
 		System.out.println(result);
 	}
 }

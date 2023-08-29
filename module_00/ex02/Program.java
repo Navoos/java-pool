@@ -33,7 +33,7 @@ public class Program {
 		while (scanner.hasNextInt()) {
 			String number = scanner.next();
 			if (isPrime(getSumOfDigits(number))) {
-				counter ++;
+				counter++;
 			}
 		}
 
