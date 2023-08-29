@@ -10,7 +10,7 @@ public class Program {
 		int number = scanner.nextInt();
 
 		if (number <= 1) {
-			System.out.println(EXIT_MESSAGE);
+			System.err.println(EXIT_MESSAGE);
 			System.exit(EXIT_STATUS);
 		}
 
